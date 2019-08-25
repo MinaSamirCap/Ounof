@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mina.ounof.R;
+import com.mina.ounof.ui.activities.SongsActivity;
+import com.mina.ounof.ui.activities.TitleWithDetailsActivity;
 import com.mina.ounof.ui.viewholders.ProgramViewHolder;
 
 
@@ -50,7 +52,7 @@ public class ProgramAdapter extends RecyclerView.Adapter<ProgramViewHolder> {
     }
 
     private void handleSongClick(int adapterPosition) {
-        /*if (context instanceof SongsActivity) {
+        if (context instanceof SongsActivity) {
             switch (adapterPosition) {
                 case 0:
                     TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra1);
@@ -158,7 +160,7 @@ public class ProgramAdapter extends RecyclerView.Adapter<ProgramViewHolder> {
                     TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra35);
                     break;
             }
-        }*/
+        }
     }
 
     @Override

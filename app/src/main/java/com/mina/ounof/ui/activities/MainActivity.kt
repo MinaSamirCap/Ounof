@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     private fun setupClickListenersToViews() {
+        songs_image_view.setOnClickListener{
+            SongsActivity.open(this)
+        }
         program_image_view.setOnClickListener {
             ProgramActivity.open(this)
         }
