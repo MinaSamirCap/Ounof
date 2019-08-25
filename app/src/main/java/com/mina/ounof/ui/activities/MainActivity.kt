@@ -12,6 +12,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import com.mina.ounof.R
+import com.mina.ounof.utils.IntentUtils
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -23,10 +24,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         setupToolbar()
         setupNavigationAndDrawer()
-
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        val navView: NavigationView = findViewById(R.id.nav_view)
-
     }
 
     private fun setupNavigationAndDrawer() {
@@ -56,7 +53,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         return super.onOptionsItemSelected(item)
     }
 
-    override fun onNavigationItemSelected(p0: MenuItem): Boolean {
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.rating -> IntentUtils.openBrowser(this, getString(R.string.form_link))
+            R.id.facebook -> IntentUtils.openBrowser(this, getString(R.string.facebook_group))
+            R.id.aboutUs -> IntentUtils.openBrowser(this, getString(R.string.lgna_link))
+            R.id.call -> IntentUtils.openDial(this, getString(R.string.tel))
+        }
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
     }
