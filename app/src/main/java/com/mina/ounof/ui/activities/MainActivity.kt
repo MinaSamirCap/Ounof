@@ -3,14 +3,12 @@ package com.mina.ounof.ui.activities
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.navigation.NavigationView
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import com.google.android.material.navigation.NavigationView
 import com.mina.ounof.R
 import com.mina.ounof.utils.IntentUtils
 import kotlinx.android.synthetic.main.activity_main.*
@@ -30,7 +28,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     private fun setupClickListenersToViews() {
-        songs_image_view.setOnClickListener{
+        songs_image_view.setOnClickListener {
             SongsActivity.open(this)
         }
         program_image_view.setOnClickListener {

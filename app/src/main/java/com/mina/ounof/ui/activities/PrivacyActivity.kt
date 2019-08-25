@@ -26,7 +26,7 @@ class PrivacyActivity : BackActivity() {
         }
     }
 
-    override fun getTitleRes(): Int = R.string.privacy
+    override fun getTitleRes(): String = getString(R.string.privacy)
 
 
 }

@@ -50,7 +50,7 @@ class ProgramActivity : BackActivity() {
         view_pager.adapter = pagerAdapter
     }
 
-    override fun getTitleRes(): Int = R.string.conference
+    override fun getTitleRes(): String = getString(R.string.conference)
 
     companion object {
         fun open(context: Context) {

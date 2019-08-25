@@ -19,7 +19,7 @@ class SongsActivity : BackActivity() {
             .commit()
     }
 
-    override fun getTitleRes(): Int = R.string.songs
+    override fun getTitleRes(): String = getString(R.string.songs)
 
     companion object {
         fun open(context: Context) {
