@@ -26,6 +26,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setupToolbar()
         setupNavigationAndDrawer()
         setupQuote()
+        setupClickListenersToViews()
+    }
+
+    private fun setupClickListenersToViews() {
+        program_image_view.setOnClickListener {
+            ProgramActivity.open(this)
+        }
     }
 
     private fun setupQuote() {

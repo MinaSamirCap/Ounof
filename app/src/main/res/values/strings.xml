@@ -52,36 +52,38 @@
     <string name="logo">الشعار</string>
     <string name="songs">الترانيم</string>
     <string name="conference">المؤتمر</string>
-    <string name="ounof_song">لحن اونوف</string>
+    <string name="ounof_song">تمجيد</string>
 
     <!-- program days -->
     <string name="one">ONE</string>
     <string name="two">TWO</string>
     <string name="three">THREE</string>
     <string name="four">FOUR</string>
-    <string name="date1">29/1</string>
-    <string name="date2">30/1</string>
-    <string name="date3">31/1</string>
-    <string name="date4">1/2</string>
+    <string name="date1">27/8</string>
+    <string name="date2">28/8</string>
+    <string name="date3">29/8</string>
+    <string name="date4">30/8</string>
 
     <!-- program arrays -->
     <string-array name="day1">
         <item>غذاء</item>
-        <item>صلاة غروب ونوم</item>
+        <item>صلاة غروب</item>
         <item>إفتتاحية المؤتمر</item>
+        <item>محاضرة</item>
         <item>مجموعات عمل</item>
         <item>عشاء</item>
         <item>أمسية</item>
+        <item>صلاة نوم</item>
     </string-array>
     <string-array name="day2">
         <item>قداس</item>
         <item>إفطار</item>
         <item>دراسة كتاب</item>
-        <item>محاضره</item>
         <item>مشروعات</item>
         <item>غذاء وألعاب</item>
         <item>صلاة غروب ونوم</item>
         <item>خلوة</item>
+        <item>نتيجة المسابقة</item>
         <item>مجموعات عمل</item>
         <item>عشاء</item>
         <item>أمسية</item>
@@ -90,11 +92,12 @@
         <item>قداس</item>
         <item>إفطار</item>
         <item>دراسة كتاب</item>
-        <item>محاضره</item>
         <item>مشروعات</item>
         <item>غذاء وألعاب</item>
         <item>صلاة غروب ونوم</item>
         <item>خلوة</item>
+        <item>نتيجة المسابقة</item>
+        <item>محاضرة</item>
         <item>مجموعات عمل</item>
         <item>عشاء</item>
         <item>أمسية</item>
@@ -106,7 +109,8 @@
         <item>مشروعات</item>
         <item>غداء وراحة</item>
         <item>صلاة غروب ونوم</item>
-        <item>خلوة</item>
+        <item>نتيجة المسابقة</item>
+        <item>محاضرة</item>
         <item>محطات</item>
         <item>عشاء</item>
         <item>حفلة السمر</item>

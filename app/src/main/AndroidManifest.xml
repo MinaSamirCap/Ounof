@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ui.activities.ProgramActivity"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".ui.activities.PrivacyActivity"
             android:parentActivityName=".ui.activities.MainActivity"
             android:screenOrientation="portrait" />
