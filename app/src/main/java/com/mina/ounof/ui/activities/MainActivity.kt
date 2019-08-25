@@ -15,6 +15,7 @@ import com.mina.ounof.R
 import com.mina.ounof.utils.IntentUtils
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -24,6 +25,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         setupToolbar()
         setupNavigationAndDrawer()
+        setupQuote()
+    }
+
+    private fun setupQuote() {
+        quote_text_view.text = "'' ${getString(R.string.aya1)} ''"
+        guide_text_view.text = "( ${getString(R.string.aya2)} )"
     }
 
     private fun setupNavigationAndDrawer() {

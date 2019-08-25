@@ -7,4 +7,157 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main">
 
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/quote_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="@string/aya1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/guide_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/accent"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="@string/aya2"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quote_text_view" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide_text_view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/logo_image_view"
+                style="@style/ImageViewStyle"
+                android:layout_width="@dimen/icon_height"
+                android:layout_height="@dimen/icon_height"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/open"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/logo_text_view"
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logo_image_view" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/conference_image_view"
+                style="@style/ImageViewStyle"
+                android:layout_width="@dimen/icon_height"
+                android:layout_height="@dimen/icon_height"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/collection"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/songs_image_view"
+                app:layout_constraintTop_toBottomOf="@id/logo_text_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/conference_text_view"
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/conference"
+                app:layout_constraintEnd_toEndOf="@id/conference_image_view"
+                app:layout_constraintStart_toStartOf="@id/conference_image_view"
+                app:layout_constraintTop_toBottomOf="@id/conference_image_view" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/songs_image_view"
+                style="@style/ImageViewStyle"
+                android:layout_width="@dimen/icon_height"
+                android:layout_height="@dimen/icon_height"
+                android:src="@mipmap/tranem"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/conference_image_view"
+                app:layout_constraintTop_toTopOf="@id/conference_image_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/songs_text_view"
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/songs"
+                app:layout_constraintEnd_toEndOf="@id/songs_image_view"
+                app:layout_constraintStart_toStartOf="@id/songs_image_view"
+                app:layout_constraintTop_toBottomOf="@id/songs_image_view" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/program_image_view"
+                style="@style/ImageViewStyle"
+                android:layout_width="@dimen/icon_height"
+                android:layout_height="@dimen/icon_height"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/time"
+                app:layout_constraintEnd_toStartOf="@id/str_image_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/conference_text_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/program_text_view"
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/program"
+                app:layout_constraintEnd_toEndOf="@id/program_image_view"
+                app:layout_constraintStart_toStartOf="@id/program_image_view"
+                app:layout_constraintTop_toBottomOf="@id/program_image_view" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/str_image_view"
+                style="@style/ImageViewStyle"
+                android:layout_width="@dimen/icon_height"
+                android:layout_height="@dimen/icon_height"
+                android:src="@mipmap/str"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/program_image_view"
+                app:layout_constraintTop_toTopOf="@id/program_image_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tr_text_view"
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ounof_song"
+                app:layout_constraintEnd_toEndOf="@id/str_image_view"
+                app:layout_constraintStart_toStartOf="@id/str_image_view"
+                app:layout_constraintTop_toBottomOf="@id/str_image_view" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

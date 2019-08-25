@@ -43,4 +43,73 @@
     <string name="privacy_link">
         https://docs.google.com/document/d/17pRZ-sCkssYMBL8NhAwwMEvZSUY9IXOJXUMchHb4nTU/edit?usp=sharing
     </string>
+
+    <string name="aya1">فلا تكونُ إلّا فرِحًا</string>
+    <string name="aya2">تثنية 16 : 15</string>
+
+    <!-- main screen-->
+    <string name="program">البرنامج</string>
+    <string name="logo">الشعار</string>
+    <string name="songs">الترانيم</string>
+    <string name="conference">المؤتمر</string>
+    <string name="ounof_song">لحن اونوف</string>
+
+    <!-- program days -->
+    <string name="one">ONE</string>
+    <string name="two">TWO</string>
+    <string name="three">THREE</string>
+    <string name="four">FOUR</string>
+    <string name="date1">29/1</string>
+    <string name="date2">30/1</string>
+    <string name="date3">31/1</string>
+    <string name="date4">1/2</string>
+
+    <!-- program arrays -->
+    <string-array name="day1">
+        <item>غذاء</item>
+        <item>صلاة غروب ونوم</item>
+        <item>إفتتاحية المؤتمر</item>
+        <item>مجموعات عمل</item>
+        <item>عشاء</item>
+        <item>أمسية</item>
+    </string-array>
+    <string-array name="day2">
+        <item>قداس</item>
+        <item>إفطار</item>
+        <item>دراسة كتاب</item>
+        <item>محاضره</item>
+        <item>مشروعات</item>
+        <item>غذاء وألعاب</item>
+        <item>صلاة غروب ونوم</item>
+        <item>خلوة</item>
+        <item>مجموعات عمل</item>
+        <item>عشاء</item>
+        <item>أمسية</item>
+    </string-array>
+    <string-array name="day3">
+        <item>قداس</item>
+        <item>إفطار</item>
+        <item>دراسة كتاب</item>
+        <item>محاضره</item>
+        <item>مشروعات</item>
+        <item>غذاء وألعاب</item>
+        <item>صلاة غروب ونوم</item>
+        <item>خلوة</item>
+        <item>مجموعات عمل</item>
+        <item>عشاء</item>
+        <item>أمسية</item>
+    </string-array>
+    <string-array name="day4">
+        <item>قداس</item>
+        <item>إفطار</item>
+        <item>دراسة كتاب</item>
+        <item>مشروعات</item>
+        <item>غداء وراحة</item>
+        <item>صلاة غروب ونوم</item>
+        <item>خلوة</item>
+        <item>محطات</item>
+        <item>عشاء</item>
+        <item>حفلة السمر</item>
+    </string-array>
+
 </resources>
