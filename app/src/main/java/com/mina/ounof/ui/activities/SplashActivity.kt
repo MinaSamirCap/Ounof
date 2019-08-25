@@ -2,7 +2,6 @@ package com.mina.ounof.ui.activities
 
 import android.os.Bundle
 import android.os.Handler
-import com.mina.ounof.MainActivity
 import com.mina.ounof.R
 import com.mina.ounof.ui.activities.base.BaseActivity
 
