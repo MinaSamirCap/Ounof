@@ -50,6 +50,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when (item?.itemId) {
+            R.id.action_privacy -> {
+                PrivacyActivity.open(this)
+                return true
+            }
+        }
         return super.onOptionsItemSelected(item)
     }
 
