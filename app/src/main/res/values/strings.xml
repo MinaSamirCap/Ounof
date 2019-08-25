@@ -116,4 +116,19 @@
         <item>حفلة السمر</item>
     </string-array>
 
+
+    <!-- conference screen -->
+    <string name="alone">الخلوة</string>
+    <string name="holy_book">دراسة الكتاب</string>
+    <string name="work_groups">مجموعات العمل</string>
+    <string name="stations">المحطات</string>
+    <string name="projects">المشروعات</string>
+
+    <string name="alone_details"></string>
+    <string name="holy_book_details"></string>
+    <string name="work_groups_details"></string>
+    <string name="stations_details"></string>
+    <string name="projects_details"></string>
+
+
 </resources>

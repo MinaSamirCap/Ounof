@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ui.activities.ConferenceActivity"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".ui.activities.TitleWithDetailsActivity"
             android:parentActivityName=".ui.activities.SongsActivity"
             android:screenOrientation="portrait" />

@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import com.mina.ounof.R
 import com.mina.ounof.ui.activities.base.BackActivity
 import kotlinx.android.synthetic.main.activity_title_with_details.*
@@ -21,6 +22,17 @@ class TitleWithDetailsActivity : BackActivity() {
         setContentView(R.layout.activity_title_with_details)
 
         details_text_view.text = intent.getStringExtra(DETAILS)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when (item?.itemId) {
+            android.R.id.home -> {
+                finish()
+                return true
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 
     companion object {

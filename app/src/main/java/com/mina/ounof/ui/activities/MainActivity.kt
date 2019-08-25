@@ -31,11 +31,17 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         logo_image_view.setOnClickListener {
             TitleWithDetailsActivity.open(this, getString(R.string.logo), R.string.logo_song)
         }
+        conference_image_view.setOnClickListener {
+            ConferenceActivity.open(this)
+        }
         songs_image_view.setOnClickListener {
             SongsActivity.open(this)
         }
         program_image_view.setOnClickListener {
             ProgramActivity.open(this)
+        }
+        str_image_view.setOnClickListener {
+
         }
     }
 
