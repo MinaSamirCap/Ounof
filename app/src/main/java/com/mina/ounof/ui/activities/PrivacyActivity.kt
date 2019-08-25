@@ -4,17 +4,16 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import com.mina.ounof.R
+import com.mina.ounof.ui.activities.base.BackActivity
 import com.mina.ounof.utils.IntentUtils
 
-class PrivacyActivity : AppCompatActivity() {
+class PrivacyActivity : BackActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_privacy)
-
-        supportActionBar?.title = getString(R.string.privacy)
     }
 
     fun openLink(view: View) {
@@ -26,6 +25,8 @@ class PrivacyActivity : AppCompatActivity() {
             context.startActivity(Intent(context, PrivacyActivity::class.java))
         }
     }
+
+    override fun getTitleRes(): Int = R.string.privacy
 
 
 }
