@@ -21,16 +21,18 @@ class SongsActivity : BackActivity() {
             .commit()
     }
 
-    override fun getTitleRes(): String = getString(R.string.songs)
+    override fun getTitleRes(): String = getString(intent.getIntExtra(TITLE_ID, R.string.songs))
 
     companion object {
 
         @JvmStatic
         val RES_ID = "resID"
+        val TITLE_ID = "titleID"
 
-        fun open(context: Context, arrayRes: Int) {
+        fun open(context: Context, titleRes: Int, arrayRes: Int) {
             val intent = Intent(context, SongsActivity::class.java)
             intent.putExtra(RES_ID, arrayRes)
+            intent.putExtra(TITLE_ID, titleRes)
             context.startActivity(intent)
         }
     }
