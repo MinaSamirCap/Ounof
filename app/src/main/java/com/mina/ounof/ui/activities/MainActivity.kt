@@ -35,13 +35,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             ConferenceActivity.open(this)
         }
         songs_image_view.setOnClickListener {
-            SongsActivity.open(this)
+            SongsActivity.open(this, R.array.songs_list)
         }
         program_image_view.setOnClickListener {
             ProgramActivity.open(this)
         }
         str_image_view.setOnClickListener {
-
+            SongsActivity.open(this, R.array.songs_list_2)
         }
     }
 

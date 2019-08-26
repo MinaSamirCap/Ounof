@@ -9,21 +9,29 @@ import com.mina.ounof.ui.fragments.ProgramFragment
 
 class SongsActivity : BackActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_songs)
 
         supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, ProgramFragment.newInstance(R.array.songs_list))
+            .replace(
+                R.id.fragment_container,
+                ProgramFragment.newInstance(intent.getIntExtra(RES_ID, R.array.songs_list))
+            )
             .commit()
     }
 
     override fun getTitleRes(): String = getString(R.string.songs)
 
     companion object {
-        fun open(context: Context) {
-            context.startActivity(Intent(context, SongsActivity::class.java))
+
+        @JvmStatic
+        val RES_ID = "resID"
+
+        fun open(context: Context, arrayRes: Int) {
+            val intent = Intent(context, SongsActivity::class.java)
+            intent.putExtra(RES_ID, arrayRes)
+            context.startActivity(intent)
         }
     }
 }

@@ -53,111 +53,138 @@ public class ProgramAdapter extends RecyclerView.Adapter<ProgramViewHolder> {
 
     private void handleSongClick(int adapterPosition) {
         if (context instanceof SongsActivity) {
-            switch (adapterPosition) {
+            if (((SongsActivity) context).getIntent().getIntExtra("resID", R.array.songs_list) == R.array.songs_list)
+                switch (adapterPosition) {
+                    case 0:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra1);
+                        break;
+                    case 1:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra2);
+                        break;
+                    case 2:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra3);
+                        break;
+                    case 3:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra4);
+                        break;
+                    case 4:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra5);
+                        break;
+                    case 5:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra6);
+                        break;
+                    case 6:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra7);
+                        break;
+                    case 7:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra8);
+                        break;
+                    case 8:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra9);
+                        break;
+                    case 9:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra10);
+                        break;
+                    case 10:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra11);
+                        break;
+                    case 11:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra12);
+                        break;
+                    case 12:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra13);
+                        break;
+                    case 13:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra14);
+                        break;
+                    case 14:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra15);
+                        break;
+                    case 15:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra16);
+                        break;
+                    case 16:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra17);
+                        break;
+                    case 17:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra18);
+                        break;
+                    case 18:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra19);
+                        break;
+                    case 19:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra20);
+                        break;
+                    case 20:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra21);
+                        break;
+                    case 21:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra22);
+                        break;
+                    case 22:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra23);
+                        break;
+                    case 23:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra24);
+                        break;
+                    case 24:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra25);
+                        break;
+                    case 25:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra26);
+                        break;
+                    case 26:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra27);
+                        break;
+                    case 27:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra28);
+                        break;
+                    case 28:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra29);
+                        break;
+                    case 29:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra30);
+                        break;
+                    case 30:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra31);
+                        break;
+                    case 31:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra32);
+                        break;
+                    case 32:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra33);
+                        break;
+                    case 33:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra34);
+                        break;
+                    case 34:
+                        TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra35);
+                        break;
+                }
+            else switch (adapterPosition) {
                 case 0:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra1);
+                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.l7n1, true);
                     break;
                 case 1:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra2);
+                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.l7n2, true);
                     break;
                 case 2:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra3);
+                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.l7n3, true);
                     break;
                 case 3:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra4);
+                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.l7n4, true);
                     break;
                 case 4:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra5);
+                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.l7n5, true);
                     break;
                 case 5:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra6);
+                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.l7n6, true);
                     break;
                 case 6:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra7);
+                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.l7n7, true);
                     break;
                 case 7:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra8);
-                    break;
-                case 8:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra9);
-                    break;
-                case 9:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra10);
-                    break;
-                case 10:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra11);
-                    break;
-                case 11:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra12);
-                    break;
-                case 12:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra13);
-                    break;
-                case 13:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra14);
-                    break;
-                case 14:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra15);
-                    break;
-                case 15:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra16);
-                    break;
-                case 16:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra17);
-                    break;
-                case 17:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra18);
-                    break;
-                case 18:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra19);
-                    break;
-                case 19:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra20);
-                    break;
-                case 20:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra21);
-                    break;
-                case 21:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra22);
-                    break;
-                case 22:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra23);
-                    break;
-                case 23:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra24);
-                    break;
-                case 24:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra25);
-                    break;
-                case 25:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra26);
-                    break;
-                case 26:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra27);
-                    break;
-                case 27:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra28);
-                    break;
-                case 28:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra29);
-                    break;
-                case 29:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra30);
-                    break;
-                case 30:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra31);
-                    break;
-                case 31:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra32);
-                    break;
-                case 32:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra33);
-                    break;
-                case 33:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra34);
-                    break;
-                case 34:
-                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.tra35);
+                    TitleWithDetailsActivity.open(context, tableNameList[adapterPosition], R.string.l7n8, true);
                     break;
             }
         }
